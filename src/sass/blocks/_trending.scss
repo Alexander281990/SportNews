@@ -1,0 +1,118 @@
+.trending {
+    padding-top: 80px;
+    background: #ebeef3;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
+        background: #e1e8f0;
+        height: 610px;
+    }
+    &__news {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 36px;
+    }
+    &__promo {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 415;
+        font-size: 28px;
+        color: #262626;
+    }
+    &__item {
+        display: flex;
+        &-img {
+            width: 234px;
+            height: 150px;
+            margin-right: 20px;
+        }
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 279px;
+        &-divader {
+            border: 1px solid #b8c2ce;
+            width: 100%;
+            height: 0px;
+        }
+        &-data {
+            font-weight: 500;
+            font-size: 10px;
+            color: rgba(38, 38, 38, 0.6);
+        }
+        &-title {
+            font-weight: 415;
+            font-size: 18px;
+            color: #262626;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 12px;
+            color: #696868;
+        }
+    }
+    &__promo {
+        width: 45%;
+        height: 100%;
+        background-image: url(../img/trending/sportsman.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+        padding: 30px 25px 40px 30px;
+        position: relative;
+        &-blackout {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(38, 38, 38, 0.6);
+            z-index: 3;
+        }
+    }
+    &__sitebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        &-btn {
+            width: 107px;
+            height: 36px;
+            border-radius: 3px;
+            border: 1px solid #ebeef3;
+            font-weight: 500;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #ebeef3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                color: #ebeef3;
+                text-decoration: none;
+            }
+        }
+        &-data {
+            font-weight: 400;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+        &-descr {
+            font-weight: 435;
+            font-size: 34px;
+            text-transform: capitalize;
+            line-height: 37px;
+            color: #fff;
+        }
+    }
+}
