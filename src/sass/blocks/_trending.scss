@@ -85,21 +85,7 @@
         height: 100%;
         z-index: 5;
         &-btn {
-            width: 107px;
-            height: 36px;
-            border-radius: 3px;
-            border: 1px solid #ebeef3;
-            font-weight: 500;
-            font-size: 20px;
-            text-transform: capitalize;
-            color: #ebeef3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &:hover {
-                color: #ebeef3;
-                text-decoration: none;
-            }
+            @include btn;
         }
         &-data {
             font-weight: 400;
