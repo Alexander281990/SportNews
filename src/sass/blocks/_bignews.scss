@@ -1,0 +1,108 @@
+.bignews {
+    padding-top: 80px;
+    background: #ebeef3;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__promo {
+        width: 100%;
+        height: 518px;
+        background-image: url(../img/bignews/football.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 31px 48px;
+        &-btn {
+            @include btn;
+        }
+        &-wrapper {
+            width: 727px;
+            min-height: 194px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-data {
+            font-weight: 400;
+            font-size: 18px;
+            color: #f9fafc;
+        }
+        &-main {
+            font-weight: 435;
+            font-size: 36px;
+            line-height: 119%;
+            text-transform: uppercase;
+            color: #f9fafc;
+        }
+        &-descr {
+            width: 697px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            color: #fff;
+        }
+    }
+    &__numpage {
+        display: flex;
+        justify-content: flex-end;
+        padding: 25px;
+        background: #e1e8f0;
+        border-radius: 6px;
+        &-wrapper {
+            display: flex;
+            width: 450px;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__btnleft {
+        height: 100%;
+        width: 70px;
+        border-radius: 6px;
+        cursor: pointer;
+        background: #b8c2ce;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            background: black;
+        }
+    }
+    &__btnnum {
+        font-weight: 425;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #b8c2ce;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            background: black;
+            color: #ebeef3;
+        }
+    }
+    &__btnright {
+        height: 100%;
+        width: 70px;
+        border-radius: 6px;
+        cursor: pointer;
+        background: #b8c2ce;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(180deg);
+        &:hover {
+            cursor: pointer;
+            background: black;
+        }
+    }
+}
