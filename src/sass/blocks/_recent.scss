@@ -17,7 +17,6 @@
     }
     &__left {
         width: 270px;
-        height: 300px;
         position: relative;
         background-image: url(../img/recent/karate.png);
         background-repeat: no-repeat;
@@ -49,7 +48,6 @@
     }
     &__center {
         width: 270px;
-        height: 300px;
         border-radius: 6px;
         background: #e1e8f0;
         padding: 8px;
@@ -85,9 +83,53 @@
     }
     &__right {
         width: 570px;
-        height: 300px;
         border-radius: 6px;
         background: #e1e8f0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 25px 0 25px;
+        font-weight: 420;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #262626;
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 21px;
+        }
+        &-titlegroup {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &-numgroup {
+            width: 25px;
+            height: 22px;
+        }
+        &-divader {
+            width: 100%;
+            height: 1px;
+            background: #b8c2ce;
+            margin-bottom: 6px;
+        }
+        &-num {
+            font-style: 13px;
+            margin-right: 10px;
+            
+        }
+        &-img {
+            width: 24px;
+            height: 24px;
+            margin-right: 7px;
+        }
     }
     &__btn {
         display: flex;
