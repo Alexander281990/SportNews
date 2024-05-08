@@ -1,0 +1,104 @@
+.article {
+    padding-top: 80px;
+    background: #ebeef3;
+    &__title {
+        font-weight: 415;
+        font-size: 28px;
+        color: #262626;
+        margin-bottom: 16px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+        width: 370px;
+        &-img {
+            width: 370px;
+            height: 248px;
+            img {
+                width: 100%;
+            }
+        }
+        &-btn {
+            position: absolute;
+            right: 24px;
+            top: 14px;
+            @include btn;
+        }
+        &-autor {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+        &-icon {
+            width: 44px;
+            height: 44px;
+            img {
+                width: 100%;
+            }
+        }
+        &-name {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+            color: #3e3232;
+        }
+        &-data {
+            font-weight: 500;
+            font-size: 14px;
+            color: rgba(38, 38, 38, 0.6);
+        }
+        &-title {
+            font-weight: 415;
+            font-size: 19px;
+            line-height: 132%;
+            color: #262626;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 124%;
+            color: #696868;
+        }
+    }
+    &__buttons {
+        display: flex;
+        height: 50px;
+        gap: 30px;
+        &-btnleft {
+            height: 100%;
+            width: 70px;
+            border-radius: 6px;
+            cursor: pointer;
+            background: #b8c2ce;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+                background: black;
+            }
+        }
+        &-btnright {
+            height: 100%;
+            width: 70px;
+            border-radius: 6px;
+            cursor: pointer;
+            background: #b8c2ce;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(180deg);
+            &:hover {
+                cursor: pointer;
+                background: black;
+            }
+        }
+    }
+}
