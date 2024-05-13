@@ -1,0 +1,15 @@
+.footer {
+    padding-top: 80px;
+    background: #ebeef3;
+    &__promo {
+        border-radius: 6px;
+        background: #e1e8f0;
+        height: 300px;
+    }
+    &__social {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: #ebeef3;
+        height: 100px;
+    }
+}
